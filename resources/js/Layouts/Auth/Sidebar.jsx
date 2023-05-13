@@ -1,5 +1,4 @@
 import { Link } from "@inertiajs/react";
-import SubscriptionPlan from "./../../Pages/Prototype/SubscriptionPlan";
 
 const Sidebar = () => {
     return (
@@ -12,7 +11,10 @@ const Sidebar = () => {
                     {/* <!-- Menu --> */}
                     <div>
                         <div className="text-gray-1 text-sm mb-4">Menu</div>
-                        <a href="/" className="side-link active">
+                        <Link
+                            href={route("prototype.dashboard")}
+                            className="side-link active"
+                        >
                             <svg
                                 width="24"
                                 height="24"
@@ -30,8 +32,8 @@ const Sidebar = () => {
                                 </g>
                             </svg>
                             Discover
-                        </a>
-                        <a href="#!" className="side-link">
+                        </Link>
+                        <Link href="#!" className="side-link">
                             <svg
                                 width="24"
                                 height="24"
@@ -46,8 +48,8 @@ const Sidebar = () => {
                                 />
                             </svg>
                             Your Favorites
-                        </a>
-                        <a href="#!" className="side-link">
+                        </Link>
+                        <Link href="#!" className="side-link">
                             <svg
                                 width="24"
                                 height="24"
@@ -62,8 +64,8 @@ const Sidebar = () => {
                                 />
                             </svg>
                             Downloads
-                        </a>
-                        <a href="#!" className="side-link mb-0">
+                        </Link>
+                        <Link href="#!" className="side-link mb-0">
                             <svg
                                 width="24"
                                 height="24"
@@ -78,7 +80,7 @@ const Sidebar = () => {
                                 />
                             </svg>
                             Messages (102)
-                        </a>
+                        </Link>
                     </div>
 
                     <div>
